@@ -1,0 +1,6 @@
+mat <- matrix(nrow = 2, ncol = 4)
+mat[1, ] <- c("In-the-Money", 184.8947, 189.0193, 192.4)
+mat[2, ] <- c("Out-of-Money", 0, 11.24569, 10.5)
+df <- as.data.frame(mat)
+colnames(df) <- c(" ", "Black-Scholes", "Heston", "Market Quote")
+print(df)
